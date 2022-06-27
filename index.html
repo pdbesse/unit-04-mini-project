@@ -10,11 +10,12 @@
 </head>
 <body>
     <header>
-        <h1 class="h1El">Word Game!</h1>
+        <h1 id="h1El">Word Game!</h1>
         <p>When a user correctly guesses a letter, the corresponding blank "_" should be replaced by the letter.</p>    
-        <button type="button" id="startbutton">Start Game!</button>
+        <button type="button" id="start-button">Start Game!</button>
     </header>
     <div id="game-container">
+        <h2>Guess each letter of the word</h2>
         <input type="text" data-name= "C" id="first" placeholder="_" />
         <input type="text" data-name= "O" id="second" placeholder="_" />
         <input type="text" data-name= "D" id="third" placeholder="_" />
@@ -27,7 +28,7 @@
         <p>Wins: <span id="wins-count">0</span></p>
         <p>Losses: <span id="loss-count">0</span></p>
     </div>
-    <div class="timer"></div>
+    <div id="timer"></div>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
