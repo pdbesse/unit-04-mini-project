@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="reset" href="./assets/css/reset.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <h1 class="h1El">Word Game!</h1>
+        <p>When a user correctly guesses a letter, the corresponding blank "_" should be replaced by the letter.</p>    
+        <button type="button" id="startbutton">Start Game!</button>
+    </header>
+    <div id="game-container">
+        <input type="text" data-name= "C" id="first" placeholder="_" />
+        <input type="text" data-name= "O" id="second" placeholder="_" />
+        <input type="text" data-name= "D" id="third" placeholder="_" />
+        <input type="text" data-name= "I" id="fourth" placeholder="_" />
+        <input type="text" data-name= "N" id="fifth" placeholder="_" />
+        <input type="text" data-name= "G" id="sixth" placeholder="_" />
+
+    </div>
+    <div id = wins-losses>
+        <p>Wins: <span id="wins-count">0</span></p>
+        <p>Losses: <span id="loss-count">0</span></p>
+    </div>
+    <div class="timer"></div>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
